@@ -9,8 +9,11 @@
         <title>Vue Email List</title>
     </head>
     <body>
-        <div id="app">
-
+        <div id="app" class="container mt-5">
+            <button class="p-2" @click="randomEmail">Genera emails</button>
+            <ul>
+                <li v-for="item in array_emails">{{ item }}</li>
+            </ul>
         </div>
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
